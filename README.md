@@ -23,7 +23,7 @@ https://maristakhovskaya.github.io/quizbirds/index.html
 ***Installation***
 1. Clone repository
 ```
-$ git clone https://github.com/MariStakhovskaya/final-rss.git
+$ git clone https://github.com/MariStakhovskaya/quizbirds.git
 ```
 2. Open with Live Server in Browser
 
