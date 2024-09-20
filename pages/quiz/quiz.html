@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songbird</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>    
+  <header>
+    <div class="container">
+        <div class="header-block">
+        <a href="../../index.html"><img class="header-logo" src="../../assets/icons/SongBird-logo.png" alt="logo songbird"/></a>
+        <div class="header-score"></div>
+    </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+        <div class="quiz-wrap">
+          <div class="quiz-menu">
+               <ul class="menu">
+                <li class="menu_item">Разминка</li>
+                <li class="menu_item">Воробьиные</li>
+                <li class="menu_item">Лесные птицы</li>
+                <li class="menu_item">Певчие птицы</li>
+                <li class="menu_item">Хищные птицы</li>
+                <li class="menu_item">Морские птицы</li>
+               </ul>
+          </div> 
+          <div class="current-question">
+                <div class="current-question-img">
+                    <img class="img-question" src="../../assets/img/bird-zaglushka.jpg" alt="bird zaglushka"/>
+                </div>
+                <div class="question-block">
+                    <div class="question-name-bird">
+
+                    </div>
+                    
+                    <div class="question-audio">
+                        <audio id="audio" src="#" controls></audio>
+                        
+
+                    </div>
+                </div>
+          </div>
+
+          <div class="answer-block">
+            <div class="answer-variants">
+
+            </div>
+            <div class="correct-answer">
+                <div class="correct-answer-intro">Прослушайте аудио и угадайте птицу </div>
+                    <div class="description-block">
+                        <div class="description-photo">
+                            <img src="#" class="image-answer"/>
+                        </div>
+                        <div class="description-name">
+
+                        </div>
+                        <div class="english-name">
+
+                        </div>
+                    </div>
+                    <div class="question-audio">
+                        <audio id="audio-answer" src="#" controls></audio>
+                        
+
+                    </div>
+                    <div class="description-text">
+
+                    </div>
+            </div>
+
+        
+        </div>
+        
+
+      
+           
+        
+
+        <button class="next-btn" disabled>Следующий вопрос</button>
+
+        </div>
+   
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+      <div class="footer-wrap">
+        <a href="https://github.com/MariStakhovskaya">Autor Maria Stakhovskaya</a> 
+        <span> 2022</span>
+        <a href="https://rs.school/js/" class="rs-logo-footer"><img class="rs-logo" src="../../assets/icons/rs_school_logo.svg" alt="logo rsschool"/></a>
+      </div>
+    </div>
+</footer>
+<script type="module" src="../../js/birds.js"></script>
+<script type="module" src="./quiz.js"></script>
+</body>
+</html>

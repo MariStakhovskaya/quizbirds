@@ -1,0 +1,189 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #222; 
+}
+
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-logo {
+    width:60px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu {
+    margin-right: 30px;
+}
+
+.header-menu a {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.header-menu a:hover {
+    color: orange;
+}
+
+.start-wrap {
+    margin: 10px 30px;
+    width: calc(100% - 60px);
+    height: calc(100vh - 200px);
+    background: url(../../assets/img/camp.png) center center no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.start-wrap .bird-img {
+    width: 40%;
+    top:50px;
+    right: 0;
+    position: absolute;
+}
+
+.main-title {
+   position: absolute;
+   top: 200px;
+   left: 100px;
+}
+
+.main-title h1 {
+    color: darkorange;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.main-title span {
+    color: darkorange;
+}
+
+.main-description {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.main-description p {
+ margin-bottom: 5px;
+}
+
+.start-btn {
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: rgb(107 160 165);
+    margin-bottom: 40px;
+    -webkit-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    -moz-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    -o-animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    cursor: pointer;
+    
+}
+
+.start-btn:hover {
+    animation: none;
+    border: 1px solid yellow;
+}
+
+@keyframes trambling-animation {
+   0%, 50%, 100% {
+     transform: rotate(0deg);
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+   }
+   10%, 30% {
+     transform: rotate(-10deg);
+     -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+     -o-transform: rotate(-10deg);
+     -ms-transform: rotate(-10deg);
+   }
+   20%, 40% {
+     transform: rotate(10deg);
+     -webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+     -o-transform: rotate(10deg);
+     -ms-transform: rotate(10deg);
+   }
+}
+
+.footer-wrap {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.rs-logo {
+    width: 80px;
+}
+
+.rs-logo-footer {
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 700px)  {
+
+    .bird-img {
+        width: 60%;
+        top:80px;
+    }
+
+    .main-title {
+        width: 160px;
+        top: 150px;
+        left: 40px;
+     }
+   
+}
+
+@media screen and (max-width: 500px)  {
+
+     .footer-wrap {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+     }
+
+     .rs-logo {
+        width: 60px;
+    }
+
+}
